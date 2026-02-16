@@ -111,6 +111,34 @@
     transform: rotate(30deg);
 }
 
+/* Social icons in navbar */
+.navbar__socials {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 8px;
+    padding-left: 12px;
+    border-left: 1px solid var(--border-color);
+}
+
+.navbar__social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+}
+
+.navbar__social-icon:hover {
+    color: var(--neon-blue);
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+}
+
 .navbar__hamburger {
     display: none;
     flex-direction: column;
@@ -174,5 +202,22 @@
     .navbar__theme-btn {
         margin-left: 0;
         margin-top: 16px;
+    }
+
+    .navbar__socials {
+        margin-left: 0;
+        margin-top: 8px;
+        padding-left: 0;
+        border-left: none;
+        padding-top: 12px;
+        border-top: 1px solid var(--border-color);
+        width: 100%;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .navbar__social-icon {
+        width: 42px;
+        height: 42px;
     }
 }
