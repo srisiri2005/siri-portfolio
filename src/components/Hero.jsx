@@ -220,9 +220,11 @@ export default function Hero() {
                         <div className="hero__avatar-ring" />
                         <div className="hero__avatar-ring hero__avatar-ring--2" />
                         <div className="hero__avatar">
-                            <div className="hero__avatar-placeholder">
-                                <span className="hero__avatar-initials">SS</span>
-                            </div>
+                            <img
+                                src="/profile.jpg"
+                                alt="N. Sri Siri"
+                                className="hero__avatar-img"
+                            />
                         </div>
                         <div className="hero__avatar-dot hero__avatar-dot--1" />
                         <div className="hero__avatar-dot hero__avatar-dot--2" />
