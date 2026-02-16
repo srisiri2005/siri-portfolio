@@ -6,7 +6,7 @@ export const projects = [
         techStack: ["Python", "TCP/IP", "Sockets", "Threading"],
         gradient: "linear-gradient(135deg, #00d4ff 0%, #0047ab 100%)",
         icon: "💬",
-        github: "https://github.com/srisiri",
+        github: "https://github.com/srisiri2005",
         demo: "#",
         category: "Networking"
     },
@@ -17,7 +17,7 @@ export const projects = [
         techStack: ["Python", "NumPy", "Matplotlib", "Algorithms"],
         gradient: "linear-gradient(135deg, #7b2ff7 0%, #ff2d7b 100%)",
         icon: "🔍",
-        github: "https://github.com/srisiri",
+        github: "https://github.com/srisiri2005",
         demo: "#",
         category: "Analysis"
     },
@@ -28,7 +28,7 @@ export const projects = [
         techStack: ["React", "Node.js", "MongoDB", "Chart.js"],
         gradient: "linear-gradient(135deg, #00ff88 0%, #00d4ff 100%)",
         icon: "📊",
-        github: "https://github.com/srisiri",
+        github: "https://github.com/srisiri2005",
         demo: "#",
         category: "Web App"
     },
@@ -39,7 +39,7 @@ export const projects = [
         techStack: ["React", "Express", "Git API", "PostgreSQL"],
         gradient: "linear-gradient(135deg, #ff2d7b 0%, #ff8c00 100%)",
         icon: "🗂️",
-        github: "https://github.com/srisiri",
+        github: "https://github.com/srisiri2005",
         demo: "#",
         category: "Platform"
     },
@@ -50,7 +50,7 @@ export const projects = [
         techStack: ["Python", "OpenAI", "Flask", "React"],
         gradient: "linear-gradient(135deg, #ff8c00 0%, #7b2ff7 100%)",
         icon: "🤖",
-        github: "https://github.com/srisiri",
+        github: "https://github.com/srisiri2005",
         demo: "#",
         category: "AI/ML"
     }
@@ -108,7 +108,7 @@ export const timeline = [
 ];
 
 export const socialLinks = [
-    { name: "GitHub", url: "https://github.com/srisiri", icon: "github" },
+    { name: "GitHub", url: "https://github.com/srisiri2005", icon: "github" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/sri-siri-goud-140ab63a4", icon: "linkedin" },
     { name: "Instagram", url: "https://instagram.com/srisiri", icon: "instagram" },
     { name: "Email", url: "mailto:srisirinaragoni@gmail.com", icon: "email" },
