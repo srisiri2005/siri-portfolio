@@ -1,0 +1,190 @@
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.projects__grid--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.projects__card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    background: var(--bg-card);
+    overflow: hidden;
+    transition: all var(--transition-smooth);
+}
+
+.projects__card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--glow-strong);
+}
+
+.projects__card-glow {
+    position: absolute;
+    bottom: -50%;
+    left: -25%;
+    width: 150%;
+    height: 50%;
+    opacity: 0;
+    filter: blur(60px);
+    transition: opacity var(--transition-smooth);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.projects__card:hover .projects__card-glow {
+    opacity: 0.08;
+}
+
+/* Card Image */
+.projects__card-image {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.projects__card-icon {
+    font-size: 4rem;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+    transition: transform var(--transition-spring);
+    z-index: 1;
+}
+
+.projects__card:hover .projects__card-icon {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.projects__card-category {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.projects__card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    opacity: 0;
+    transition: opacity var(--transition-smooth);
+    z-index: 3;
+}
+
+.projects__card:hover .projects__card-overlay {
+    opacity: 1;
+}
+
+.projects__card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: all var(--transition-fast);
+    transform: translateY(20px);
+}
+
+.projects__card:hover .projects__card-link {
+    transform: translateY(0);
+}
+
+.projects__card-link:hover {
+    background: var(--neon-blue);
+    border-color: var(--neon-blue);
+    transform: scale(1.1) !important;
+}
+
+/* Card Body */
+.projects__card-body {
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.projects__card-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    transition: color var(--transition-fast);
+}
+
+.projects__card:hover .projects__card-title {
+    color: var(--neon-blue);
+}
+
+.projects__card-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.projects__card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.projects__tech-badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    background: rgba(0, 212, 255, 0.08);
+    color: var(--neon-blue);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.projects__tech-badge:hover {
+    background: rgba(0, 212, 255, 0.15);
+    border-color: var(--border-glow);
+}
+
+@media (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects__card-image {
+        height: 160px;
+    }
+}
