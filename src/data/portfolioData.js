@@ -109,7 +109,7 @@ export const timeline = [
 
 export const socialLinks = [
     { name: "GitHub", url: "https://github.com/srisiri", icon: "github" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/srisiri", icon: "linkedin" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/sri-siri-goud-140ab63a4", icon: "linkedin" },
     { name: "Instagram", url: "https://instagram.com/srisiri", icon: "instagram" },
     { name: "Email", url: "mailto:srisirinaragoni@gmail.com", icon: "email" },
 ];
