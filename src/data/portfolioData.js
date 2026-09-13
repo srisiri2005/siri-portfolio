@@ -1,7 +1,6 @@
 export const projects = [
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 1,
         title: "AI Crime Analytics",
         description: "An AI-powered analytics tool for crime data, built in collaboration with my team. Provides insightful visualizations and predictive analysis.",
         techStack: ["AI/ML", "Python", "Data Analytics"],
@@ -12,8 +11,7 @@ export const projects = [
         category: "AI/ML"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 2,
         title: "Uni-Pool",
         description: "A university pooling platform designed to help students share resources or rides efficiently. Developed as a collaborative team project.",
         techStack: ["React", "Node.js", "Web App"],
@@ -24,8 +22,7 @@ export const projects = [
         category: "Web App"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 3,
         title: "Jaya Krishna ENT",
         description: "A dedicated website/platform for Jaya Krishna ENT clinic, built to streamline patient management and information sharing with a teammate.",
         techStack: ["Web Development", "UI/UX", "Frontend"],
@@ -36,8 +33,7 @@ export const projects = [
         category: "Platform"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 4,
         title: "GovConnect-A",
         description: "A comprehensive solution bridging the gap between citizens and government services, created in collaboration with a teammate.",
         techStack: ["Platform", "Full Stack"],
@@ -109,8 +105,8 @@ export const socialLinks = [
 
 export const certificates = [
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 1,
+        image: "/certificates/cert-1.png",
         title: "Google AI Essentials",
         issuer: "Google via Coursera",
         date: "May 13, 2026",
@@ -118,8 +114,8 @@ export const certificates = [
         icon: "🏆"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 2,
+        image: "/certificates/cert-2.png",
         title: "Discover the Art of Prompting",
         issuer: "Google via Coursera",
         date: "May 12, 2026",
@@ -127,8 +123,8 @@ export const certificates = [
         icon: "📜"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 3,
+        image: "/certificates/cert-3.png",
         title: "Use AI Responsibly",
         issuer: "Google via Coursera",
         date: "May 12, 2026",
@@ -136,8 +132,8 @@ export const certificates = [
         icon: "📜"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 4,
+        image: "/certificates/cert-4.png",
         title: "Introduction to AI",
         issuer: "Google via Coursera",
         date: "May 10, 2026",
@@ -145,8 +141,8 @@ export const certificates = [
         icon: "📜"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 5,
+        image: "/certificates/cert-5.png",
         title: "Maximize Productivity With AI Tools",
         issuer: "Google via Coursera",
         date: "May 10, 2026",
@@ -154,8 +150,8 @@ export const certificates = [
         icon: "📜"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 6,
+        image: "/certificates/cert-6.png",
         title: "Developing Generative AI Solutions",
         issuer: "AWS Training & Certification",
         date: "July 10, 2026",
@@ -163,8 +159,8 @@ export const certificates = [
         icon: "☁️"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 7,
+        image: "/certificates/cert-7.png",
         title: "Fundamentals of ML and AI",
         issuer: "AWS Training & Certification",
         date: "July 10, 2026",
@@ -172,71 +168,35 @@ export const certificates = [
         icon: "🧠"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 8,
+        image: "/certificates/cert-8.png",
         title: "OS - Bug Bounty Challenge",
         issuer: "CDAC",
         date: "July 8, 2026",
         description: "Certificate of participation in a national-level competition.",
-        icon: "🛡️"
+        icon: "🏅"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 9,
+        image: "/certificates/cert-9.png",
         title: "Web Development Internship",
-        issuer: "Prodigy InfoTech",
+        issuer: "Internship Provider",
         date: "July 12, 2026",
-        description: "Certificate of completion for a 1-month internship in Web Development.",
+        description: "Completion certificate for Web Development internship.",
         icon: "💻"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
-        title: "MongoDB Basics for Students",
-        issuer: "MongoDB",
-        date: "Aug 14, 2026",
-        description: "Proof of Completion for MongoDB Basics.",
-        icon: "🍃"
-    },
-    {
-        id: ,
-        image: /certificates/cert-.png,
-        title: "Domain 4 Review: AWS Certified Generative AI Developer",
-        issuer: "AWS Training & Certification",
-        date: "July 14, 2026",
-        description: "Completion Certificate for Domain 4 Review.",
-        icon: "☁️"
-    },
-    {
-        id: ,
-        image: /certificates/cert-.png,
-        title: "QuizOff 2026: India's Biggest AI Quiz",
-        issuer: "CampusCrew & Unstop",
-        date: "July 19, 2026",
-        description: "Certificate of participation for competing in the QuizOff 2026 AI Quiz.",
-        icon: "🎯"
-    },
-    {
-        id: ,
-        image: /certificates/cert-.png,
-        title: "Domain 2 Review: AWS Certified Generative AI Developer",
-        issuer: "AWS Training & Certification",
-        date: "July 23, 2026",
-        description: "Completion Certificate for Domain 2 Review.",
-        icon: "☁️"
-    },
-    {
-        id: ,
-        image: /certificates/cert-.png,
-        title: "Letter of Recommendation (Web Development)",
-        issuer: "Prodigy InfoTech",
+        id: 10,
+        image: "/certificates/cert-10.png",
+        title: "Letter of Recommendation",
+        issuer: "Internship Provider",
         date: "July 12, 2026",
         description: "Letter of Recommendation for exceptional performance during the Web Development internship.",
         icon: "📝"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 11,
+        image: "/certificates/cert-11.png",
         title: "Building AI-Powered Search with MongoDB Vector Search",
         issuer: "MongoDB",
         date: "Aug 14, 2026",
@@ -244,8 +204,8 @@ export const certificates = [
         icon: "🍃"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 12,
+        image: "/certificates/cert-12.png",
         title: "Building RAG Apps Using MongoDB",
         issuer: "MongoDB",
         date: "Aug 14, 2026",
@@ -253,8 +213,8 @@ export const certificates = [
         icon: "🍃"
     },
     {
-        id: ,
-        image: /certificates/cert-.png,
+        id: 13,
+        image: "/certificates/cert-13.png",
         title: "AI and Innovation: How MongoDB Enables a Resilient AI Strategy",
         issuer: "MongoDB",
         date: "Aug 14, 2026",
