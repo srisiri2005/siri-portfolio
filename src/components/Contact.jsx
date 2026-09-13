@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import { socialLinks } from '../data/portfolioData';
 import './Contact.css';
@@ -20,6 +21,7 @@ const SocialIcon = ({ type }) => {
 
 export default function Contact() {
     const [ref, isVisible] = useIntersectionObserver();
+    const form = useRef();
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -27,12 +29,29 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitted(true);
-            setFormData({ name: '', email: '', message: '' });
-            setTimeout(() => setSubmitted(false), 4000);
-        }, 1500);
+
+        emailjs
+            .sendForm(
+                'service_0kkg1wr', // Service ID
+                'template_sj7tkzf', // Template ID added
+                form.current,
+                {
+                    publicKey: 'dwFEchB9j5OJ5R4rF', // Public Key added
+                }
+            )
+            .then(
+                () => {
+                    setIsSubmitting(false);
+                    setSubmitted(true);
+                    setFormData({ name: '', email: '', message: '' });
+                    setTimeout(() => setSubmitted(false), 4000);
+                },
+                (error) => {
+                    setIsSubmitting(false);
+                    console.error('FAILED...', error.text);
+                    alert('Failed to send the message. Please try again later.');
+                }
+            );
     };
 
     const handleChange = (e) => {
@@ -52,7 +71,7 @@ export default function Contact() {
 
                 <div className={`contact__grid ${isVisible ? 'contact__grid--visible' : ''}`}>
                     {/* Form */}
-                    <form className="contact__form glass neon-border" onSubmit={handleSubmit}>
+                    <form ref={form} className="contact__form glass neon-border" onSubmit={handleSubmit}>
                         <div className="contact__form-group">
                             <label htmlFor="contact-name" className="contact__label">Name</label>
                             <input
