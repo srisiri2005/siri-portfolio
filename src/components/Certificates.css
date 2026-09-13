@@ -1,0 +1,72 @@
+.certificates__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.certificates__grid--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.certificates__card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificates__card--hovered {
+    transform: translateY(-5px);
+}
+
+.certificates__card-image {
+    height: 120px;
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.certificates__card-icon {
+    font-size: 3rem;
+}
+
+.certificates__card-body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificates__card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.certificates__card-issuer {
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.certificates__card-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.certificates__card-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
